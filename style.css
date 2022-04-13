@@ -44,6 +44,22 @@ header img {
     color: #0080C5;
 }
 
+.decorative {
+    background-image: url('https://github.com/kriradevska/club-website/blob/main/museum.jpg?raw=true');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 12em;
+    position: relative;
+    background-attachment: fixed;
+    display: flex;
+} 
+
+.decorative h1 {
+    font-size: 3em;
+    color: white;
+    padding-left: 0.5em;
+}
 @media only screen and (max-width: 600px) {
     header img {
         height: 8em;
