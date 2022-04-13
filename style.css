@@ -2,6 +2,11 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
 /* --Header -- */
 
 header {
@@ -44,6 +49,8 @@ header img {
     color: #0080C5;
 }
 
+/* --Main-- */
+
 .decorative {
     background-image: url('https://github.com/kriradevska/club-website/blob/main/museum.jpg?raw=true');
     background-position: center;
@@ -59,7 +66,32 @@ header img {
     font-size: 3em;
     color: white;
     padding-left: 0.5em;
+    font-family: 'Oswald', sans-serif;
 }
+
+.text {
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.contact {
+    font-size: 0.8em;
+}
+
+/* --Footer-- */
+
+footer {
+    margin-top: auto;
+    background-color: #1a455b;
+    padding-left: 0.5em;
+    color: azure;
+}
+
 @media only screen and (max-width: 600px) {
     header img {
         height: 8em;
@@ -73,5 +105,15 @@ header img {
 
     .nav {
         margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .nav a {
+        font-size: 2em;
+    }
+
+    .text {
+        font-size: 1.5em;
     }
 }
