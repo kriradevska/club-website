@@ -21,6 +21,7 @@ header img {
 
 .nav {
     margin-left: auto;
+    margin-top: 2.5em;
 }
 
 .nav li {
@@ -28,15 +29,19 @@ header img {
     flex-wrap: wrap;
     list-style-type: none;
     align-self: center;
-    padding-right: 0.4em;
+    padding-right: 0.7em;
 
 }
 
 .nav a {
     color: #4d6e80;
-    font-size: 1.7em;
+    font-size: 1.4em;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
+}
+
+.nav a:hover {
+    color: #0080C5;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,7 +51,11 @@ header img {
     }
 
     .nav a {
-        font-size: 1.1em;
+        font-size: 1.06em;
         flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 0;
     }
 }
