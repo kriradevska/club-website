@@ -1,3 +1,52 @@
 html {
     font-family: 'Lato', sans-serif;
 }
+
+/* --Header -- */
+
+header {
+    width: 100%;
+    display: inline-flex;
+    background-color: #1a455b;
+}
+
+header img {
+    height: 9em;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5em;
+    flex-shrink: 1;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-self: center;
+    padding-right: 0.4em;
+
+}
+
+.nav a {
+    color: #4d6e80;
+    font-size: 1.7em;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    header img {
+        height: 8em;
+        width: auto;
+    }
+
+    .nav a {
+        font-size: 1.1em;
+        flex-direction: column;
+    }
+}
